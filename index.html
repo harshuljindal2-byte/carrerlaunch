@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover hackathons, internships, competitions, scholarships and more with CareerLaunch.">
+  <title>CareerLaunch — Discover what's next</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">
+    <span>✨ Your next opportunity is one search away.</span>
+    <a href="#opportunities">Explore opportunities <span aria-hidden="true">→</span></a>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="CareerLaunch home">
+      <span class="brand-mark">C</span><span>Career<span class="brand-accent">Launch</span></span>
+    </a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a class="active" href="#">Home</a>
+      <a href="#opportunities">Discover</a>
+      <a href="#categories">Categories</a>
+      <a href="#how-it-works">How it works</a>
+    </nav>
+    <div class="header-actions">
+      <button class="text-btn" id="loginBtn">Log in</button>
+      <button class="primary-btn small" id="signupBtn">Sign up free <span>↗</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> BUILT FOR AMBITIOUS STUDENTS</div>
+        <h1>Make your next move.<br><span>Make it count.</span></h1>
+        <p class="hero-copy">Find opportunities that move you forward. Explore hackathons, internships, competitions and more — all in one place.</p>
+        <form class="hero-search" id="searchForm">
+          <span class="search-icon">⌕</span>
+          <input id="searchInput" type="search" placeholder="Search opportunities, skills or organisations..." aria-label="Search opportunities">
+          <button type="submit">Search <span>→</span></button>
+        </form>
+        <div class="popular-searches">
+          <span>Popular:</span>
+          <button class="quick-search" data-search="hackathon">Hackathons</button>
+          <button class="quick-search" data-search="internship">Internships</button>
+          <button class="quick-search" data-search="design">Design</button>
+          <button class="quick-search" data-search="AI">AI / ML</button>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="floating-card card-top">
+          <span class="float-icon purple">✦</span><div><strong>Find your fit</strong><small>Opportunities for every ambition</small></div>
+        </div>
+        <div class="hero-illustration">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="planet"><span>✦</span></div>
+          <div class="mini-label label-one">LEARN</div><div class="mini-label label-two">BUILD</div><div class="mini-label label-three">GROW</div>
+          <div class="spark spark-a">✳</div><div class="spark spark-b">✦</div><div class="spark spark-c">✧</div>
+        </div>
+        <div class="floating-card card-bottom">
+          <span class="float-icon orange">↗</span><div><strong>Your next chapter</strong><small>Starts with one application</small></div>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <div><strong>Explore more</strong><span>Discover your next opportunity</span></div>
+        <a href="#categories" aria-label="Scroll to categories">↓</a>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <span>ONE PLACE TO DISCOVER</span><i></i><span>LEARN</span><i></i><span>COMPETE</span><i></i><span>CONNECT</span><i></i><span>GROW</span>
+    </section>
+
+    <section class="section categories-section" id="categories">
+      <div class="section-heading">
+        <div><div class="eyebrow dark-eyebrow">FIND YOUR PATH</div><h2>Explore by <span>category</span></h2><p>Whatever your goal, there's an opportunity waiting for you.</p></div>
+        <a class="view-link" href="#opportunities">View all opportunities <span>→</span></a>
+      </div>
+      <div class="category-grid">
+        <button class="category-tile" data-category="Hackathon"><span class="category-icon violet">⌘</span><strong>Hackathons</strong><small>Build, create & innovate</small><span class="tile-arrow">↗</span></button>
+        <button class="category-tile" data-category="Internship"><span class="category-icon peach">▣</span><strong>Internships</strong><small>Get real-world experience</small><span class="tile-arrow">↗</span></button>
+        <button class="category-tile" data-category="Competition"><span class="category-icon yellow">♜</span><strong>Competitions</strong><small>Challenge yourself</small><span class="tile-arrow">↗</span></button>
+        <button class="category-tile" data-category="Scholarship"><span class="category-icon mint">✧</span><strong>Scholarships</strong><small>Invest in your future</small><span class="tile-arrow">↗</span></button>
+        <button class="category-tile" data-category="Fellowship"><span class="category-icon blue">◎</span><strong>Fellowships</strong><small>Learn from the best</small><span class="tile-arrow">↗</span></button>
+        <button class="category-tile" data-category="Workshop"><span class="category-icon pink">▤</span><strong>Workshops</strong><small>Level up your skills</small><span class="tile-arrow">↗</span></button>
+      </div>
+    </section>
+
+    <section class="section opportunities-section" id="opportunities">
+      <div class="section-heading">
+        <div><div class="eyebrow dark-eyebrow">CURATED FOR YOU</div><h2>Discover <span>opportunities</span></h2><p>Explore a handpicked set of sample listings to get started.</p></div>
+        <div class="listing-count"><strong id="resultCount">8</strong><span> opportunities</span></div>
+      </div>
+      <div class="filter-bar">
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-tab selected" data-filter="All">All</button>
+          <button class="filter-tab" data-filter="Hackathon">Hackathons</button>
+          <button class="filter-tab" data-filter="Internship">Internships</button>
+          <button class="filter-tab" data-filter="Competition">Competitions</button>
+          <button class="filter-tab" data-filter="Scholarship">Scholarships</button>
+        </div>
+        <select id="sortSelect" aria-label="Sort opportunities">
+          <option value="recommended">Sort: Recommended</option>
+          <option value="az">Name: A to Z</option>
+          <option value="deadline">Deadline: Soonest</option>
+        </select>
+      </div>
+      <div class="opportunity-grid" id="opportunityGrid"></div>
+      <div class="empty-state hidden" id="emptyState"><div>⌕</div><h3>No matching opportunities</h3><p>Try another keyword or category.</p><button class="outline-btn" id="clearFilters">Clear filters</button></div>
+      <div class="load-more-wrap"><button class="outline-btn" id="loadMore">Explore all opportunities <span>→</span></button></div>
+      <p class="demo-note">Demo content for the website prototype. Event names, dates and application links are illustrative and should be verified before publishing.</p>
+    </section>
+
+    <section class="feature-banner" id="how-it-works">
+      <div class="feature-copy">
+        <div class="eyebrow light-eyebrow">YOUR JOURNEY STARTS HERE</div>
+        <h2>Less searching.<br><span>More becoming.</span></h2>
+        <p>CareerLaunch brings discovery and action together, so you can spend less time looking and more time doing what matters.</p>
+        <a href="#opportunities" class="white-btn">Find your opportunity <span>→</span></a>
+      </div>
+      <div class="feature-steps">
+        <div class="step"><span>01</span><div><strong>Discover</strong><small>Find opportunities that match your interests.</small></div><b>⌕</b></div>
+        <div class="step"><span>02</span><div><strong>Prepare</strong><small>Understand the requirements and deadlines.</small></div><b>✎</b></div>
+        <div class="step"><span>03</span><div><strong>Apply & grow</strong><small>Take the next step in your journey.</small></div><b>↗</b></div>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div><div class="eyebrow dark-eyebrow">DON'T MISS OUT</div><h2>Good opportunities<br>don't wait around.</h2><p>Get updates when new opportunities are added.</p></div>
+      <form class="newsletter-form" id="newsletterForm"><input type="email" id="emailInput" placeholder="Enter your email address" required><button class="primary-btn" type="submit">Notify me <span>→</span></button><small id="newsletterMessage">No spam. Just opportunities worth exploring.</small></form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="brand brand-light" href="#"><span class="brand-mark">C</span><span>Career<span class="brand-accent">Launch</span></span></a><p>Helping students discover their next big opportunity.</p></div>
+      <div class="footer-column"><strong>Explore</strong><a href="#opportunities">Hackathons</a><a href="#opportunities">Internships</a><a href="#opportunities">Competitions</a></div>
+      <div class="footer-column"><strong>CareerLaunch</strong><a href="#how-it-works">About us</a><a href="#categories">Categories</a><a href="mailto:hello@careerlaunch.example">Contact</a></div>
+      <div class="footer-column"><strong>For organisers</strong><a href="mailto:hello@careerlaunch.example">Post an opportunity</a><a href="mailto:hello@careerlaunch.example">Partner with us</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 CareerLaunch. Built for the next generation.</span><span>Made with ambition ✦</span></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog class="auth-dialog" id="authDialog">
+    <button class="dialog-close" id="closeDialog" aria-label="Close">×</button>
+    <div class="dialog-mark">C</div><h2 id="dialogTitle">Welcome to CareerLaunch</h2><p id="dialogText">Create your student account to save opportunities and keep track of your journey.</p>
+    <form id="authForm"><label for="authEmail">Email address</label><input id="authEmail" type="email" placeholder="you@example.com" required><label for="authPassword">Password</label><input id="authPassword" type="password" placeholder="At least 8 characters" minlength="8" required><button class="primary-btn full-btn" type="submit" id="authSubmit">Continue <span>→</span></button></form>
+    <small class="demo-note">Prototype only: authentication is not connected to a server yet.</small>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
